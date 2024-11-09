@@ -1,0 +1,353 @@
+
+body{
+    font-family: 'Montserrat', sans-serif;
+}
+
+.cabecera{
+    height: 80px;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.cabecera_navegacion{
+    align-items: center;
+}
+
+.navegacion_opciones{
+    display: flex;
+    gap: 30px;
+    font-weight: 500;
+}
+
+.navegacion_item{
+    margin: 0;
+}
+
+.navegacion_item a{
+    color: black;
+    text-decoration: none;
+    transition: color 200ms ease;
+    margin-bottom: 5px;
+    position: relative;
+}
+
+.navegacion_item a::after {
+    content: '';
+    position: absolute;
+    bottom: -4px;
+    left: 0;
+    width: 0;
+    height: 3px;
+    background-color: #000000;
+    transition: width 200ms ease; 
+}
+
+.navegacion_item a:hover::after{
+    width: 100%;
+}
+
+.cabecera_botones{
+    display: flex;
+    gap: 30px;
+}
+
+
+
+.btn-login{
+    background-color: transparent;
+    color: #4FD1C5;
+    font-weight: 500;
+}
+
+.btn-login:hover{
+    color: white;
+    background-color: #4FD1C5;
+    box-shadow: 0px 2px 5px rgba(79, 209, 197, 0.6);
+    border: white 2px;
+    transition: 0.3s;
+}
+
+.btn-register{
+    background-color: #4FD1C5;
+    color: white;
+    font-weight: 500;
+}
+
+.btn-register:hover{
+    background-color: transparent;
+    color: #4FD1C5;
+    box-shadow: #4FD1C5 0px 2px 5px;
+    transition: 0.3s;
+}
+
+.presentacion{
+    margin: 5% 10% 5% 10%;
+    display: flex;
+}
+
+.presentacion_contenido{
+    flex-direction: column;
+    display: flex;
+    gap: 40px;
+    justify-content: center;
+}
+
+.presentacion_contenido h1{
+    font-size: 50px;
+}
+
+.presentacion_contenido h3{
+    font-size: 20px;
+}
+
+.presentacion_contenido a{
+    border: #4FD1C5 solid 1px;
+    width: 250px;
+    height: 50px;
+    border-radius: 20px;
+    padding: 8px;
+    margin: 5px;
+    text-align: center;
+    color: black;
+    text-decoration: none;
+    align-content: center;
+}
+
+.presentacion_contenido a:hover{
+    background-color: #4FD1C5;
+    color: white;
+    transition: 0.3s;
+    box-shadow: #4FD1C5 0px 2px 5px;
+}
+
+
+.presentacion_img{
+    padding: 1%;
+}
+
+.presentacion_img img{
+    width: 700px;
+}
+
+.Funcionamiento{
+    margin: 5% 10% 5% 10%;
+    display: flex;
+    flex-direction: column
+}
+
+.funcionamiento_titulo{
+    text-align: center;
+}
+
+.funcionamiento_titulo h2{
+
+}
+
+.funcionamiento_titulo_subrayado,
+.viajeCabecera_subrayado,
+.beneficios-cabecera_subrayado{
+    width: 300px;
+    height: 4px;
+    background-color: #4FD1C5;
+    margin: 0 auto;
+    margin-top: 20px;
+}
+
+.paso{
+    margin: 5%;
+    width: auto;
+    height: 250px;
+    background-color: white;
+    border-radius: 20px;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.5);
+    display: flex;
+    flex-direction: row;
+    overflow: hidden;
+    padding: 30px;
+    box-sizing: border-box;
+    gap: 400px;
+}
+
+.paso_registrate_contenido,
+.paso_publica_contenido,
+.paso_buscaViaje_contenido,
+.paso_conectate_contenido{
+    display: flex;
+    flex-direction: column;
+    width: 400px;
+    gap: 25px;
+    margin-left: 30px;
+}
+
+.paso_registrate_contenido p,
+.paso_publica_contenido p,
+.paso_buscaViaje_contenido p,
+.paso_conectate_contenido p{
+    color: #000000;
+}
+
+.paso_registrate_contenido img{
+    width: 40px;
+}
+
+.paso_contenido_subrayado{
+    height: 4px;
+    width: 100px;
+    background-color: #4FD1C5;
+}
+
+.paso_registrate_img img{
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+.paso_registrate_img,
+.paso_publica_img{
+    align-content: center;
+}
+
+.paso-publica{
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+.paso_publica_contenido img{
+    width: 40px;
+    height: 40px;
+}
+
+.paso_publica_img img{
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+.paso_conectate{
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+.paso_buscaViaje_contenido img,
+.paso_conectate_contenido img{
+    width: 40px;
+}
+
+.viajesPopulares{
+    margin: 5% 10% 5% 10%;
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+}
+
+.viajesCabecera h2,
+.beneficios-cabecera h2{
+    text-align: center;
+}
+
+.viajes_opciones{
+    width: 100%;
+    height: auto;
+    flex-wrap: wrap;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 30px;
+}
+
+.viaje{
+    width: 300px;
+    height: 60px;
+    background-color: white;
+    border-radius: 20px;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.oculto{
+    display: none;
+}
+
+.ver_mas{
+    width: 300px;
+    border: 1px solid #4FD1C5;
+    height: 60px;
+    border-radius: 20px;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    margin: 20px auto;
+    padding: 10px;
+    background-color:transparent;
+    font-weight: 600;
+    font-size: 25px;
+    display: block;
+}
+
+.ver_mas:hover{
+    background-color: #4FD1C5;
+    color: white;
+}
+
+.beneficios{
+    margin: 5% 10% 5% 10%;
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+}
+
+.beneficios_targets{
+    flex-wrap: wrap;
+    display: flex;
+    flex-direction: row;
+    gap: 50px;
+    justify-content: space-between;
+}
+
+.target{
+    width: 350px;
+    height: 400px;
+    background-color: #4FD1C5;
+    overflow: hidden;
+    border-radius: 20px;
+}
+
+.target h3,
+.target p{
+    align-items: center;
+    text-align: center;
+    padding: 15px;
+}
+
+.footer_container{
+    background-color: #000000;
+}
+
+.footer{
+    padding: 5% 10% 5%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.footer__izquierdo p{
+    color: white;
+}
+
+.footer__centro a,p{
+    text-decoration: none;
+    color: white;
+}
+
+.footer__derecho a{
+    color: white;
+    text-decoration: none;
+}
+
+.footer__derecho a:hover{
+    color: #4FD1C5;
+    text-decoration: none;
+}
