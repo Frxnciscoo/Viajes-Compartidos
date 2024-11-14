@@ -135,6 +135,13 @@ body{
     width: 700px;
 }
 
+.funcionamiento_pasos{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 3% 0;
+}
+
 .Funcionamiento{
     margin: 5% 10% 5% 10%;
     display: flex;
@@ -160,9 +167,7 @@ body{
 }
 
 .paso{
-    margin: 5%;
-    width: auto;
-    height: 250px;
+    width: 250px;
     background-color: white;
     border-radius: 20px;
     box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.5);
@@ -171,7 +176,8 @@ body{
     overflow: hidden;
     padding: 30px;
     box-sizing: border-box;
-    gap: 400px;
+    display: flex;
+    flex-direction: column;
 }
 
 .paso_registrate_contenido,
@@ -180,9 +186,8 @@ body{
 .paso_conectate_contenido{
     display: flex;
     flex-direction: column;
-    width: 400px;
+    width: auto;
     gap: 25px;
-    margin-left: 30px;
 }
 
 .paso_registrate_contenido p,
@@ -202,21 +207,26 @@ body{
     background-color: #4FD1C5;
 }
 
-.paso_registrate_img img{
-    max-width: 100%;
-    height: auto;
-    display: block;
+.paso_registrate_img img,
+.paso_publica_img img,
+.paso_buscaViaje_img img,
+.paso_conectate_img img{
+    width: 100%;
+    height: 100%;
 }
 
 .paso_registrate_img,
-.paso_publica_img{
+.paso_publica_img,
+.paso_buscaViaje_img,
+.paso_conectate_img{
     align-content: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    display: flex;
 }
 
-.paso-publica{
-    display: flex;
-    flex-direction: row-reverse;
-}
+
 
 .paso_publica_contenido img{
     width: 40px;
@@ -224,15 +234,11 @@ body{
 }
 
 .paso_publica_img img{
-    max-width: 100%;
-    height: auto;
-    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
 }
 
-.paso_conectate{
-    display: flex;
-    flex-direction: row-reverse;
-}
 
 .paso_buscaViaje_contenido img,
 .paso_conectate_contenido img{
@@ -267,6 +273,14 @@ body{
     background-color: white;
     border-radius: 20px;
     box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.5);
+    text-align: center;
+    align-content: center;
+}
+
+.viaje a{
+    text-decoration: inherit;
+    color: #000000;
+    padding: 5%;
 }
 
 .oculto{
