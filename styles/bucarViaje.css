@@ -24,6 +24,9 @@ body{
     align-items: center;
 }
 
+.logoEstuViaje{
+    width: 80px;
+}
 
 .cabecera__nav a{
     color: #4FD1C5;

@@ -11,6 +11,10 @@ body{
     align-items: center;
 }
 
+.logoEstuViaje{
+    width: 80px;
+}
+
 .cabecera_navegacion{
     align-items: center;
 }
